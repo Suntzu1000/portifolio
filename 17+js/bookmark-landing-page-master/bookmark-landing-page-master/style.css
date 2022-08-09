@@ -1,0 +1,42 @@
+@import "hero.css";
+@import "cabecalho.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,400;1,500&display=swap');
+
+:root{
+    /*### Primary*/
+
+    ---SoftBlue: hsl(231, 69%, 60%);
+    ---SoftRed: hsl(0, 94%, 66%);
+
+    /*### Neutral*/
+
+    ---GrayishBlue: hsl(229, 8%, 60%);
+    ---VeryDarkBlue: hsl(229, 31%, 21%);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Rubik', sans-serif;
+    color: var(---VeryDarkBlue);
+}
+
+
+
+
+
+
+
+
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+}

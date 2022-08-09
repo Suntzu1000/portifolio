@@ -1,0 +1,24 @@
+@import "geral.css";
+@import "principal.css";
+@import "media570.css";
+@import "media1440.css";
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,300;1,400;1,500&display=swap');
+:root{
+   /*### Primary*/
+
+    ---Blue: hsl(246, 80%, 60%);
+    ---LightRed-work: hsl(15, 100%, 70%);
+    ---SoftBlue-play: hsl(195, 74%, 62%);
+    ---LightRed-study: hsl(348, 100%, 68%);
+    ---LimeGreen-exercise: hsl(145, 58%, 55%);
+    ---Violet-social: hsl(264, 64%, 52%);
+    ---SoftOrange-self-care: hsl(43, 84%, 65%);
+    ---Cartao-Hover: hsl(236, 41%, 34%);
+
+/*### Neutral*/
+
+    ---VeryDarkBlue: hsl(226, 43%, 10%);
+    ---DarkBlue: hsl(235, 46%, 20%);
+    ---DesaturatedBlue: hsl(235, 45%, 61%);
+    ---PaleBlue: hsl(236, 100%, 87%);
+}

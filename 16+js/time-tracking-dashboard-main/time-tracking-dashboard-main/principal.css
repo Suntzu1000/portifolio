@@ -1,0 +1,190 @@
+body{
+    background-color: var(---VeryDarkBlue);
+}
+
+.container{
+    /*border: 1px solid red;*/
+    width: 88%;
+    margin: 2rem auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 2.2rem;
+}
+.menu-cartao{
+    background-color: var(---DarkBlue);
+    border-radius: 1.6rem;
+    width: 100%;
+}
+.menu-cartao .relatorio-cartao{
+    background-color: var(---Blue);
+    border-radius: 1.6rem;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.8rem;
+}
+.menu-cartao img{
+    width: 26%;
+    max-width: 130px;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.menu-cartao .relatorio{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.relatorio p{
+    color: var(---PaleBlue);
+    font-size: 1.5rem;
+}
+.relatorio .nome{
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 300;
+}
+.container .menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem;
+}
+ .menu .menu-link{
+    color: var(---DesaturatedBlue);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+ .menu .menu-link:hover{
+    color: white;
+}
+.menu .menu-ativo{
+    color: white;
+}
+
+.regular-cartao{
+    /*border: 1px solid red;*/
+    
+    width: 100%;
+    border-radius: 1.6rem;
+    
+    background-repeat: no-repeat;
+    background-position: 92% -1rem;
+}
+.regular-cartao .propriedade-cartao{
+    position: relative;
+    background-color: var(---DarkBlue);
+    margin-top: 4rem;
+    border-radius: 1.6rem;
+    padding: 2.5rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.9rem;
+}
+.regular-cartao .propriedade-cartao:hover{
+    background-color: var(---Cartao-Hover);
+}
+
+.propriedade-cartao .seta{
+   /* border: 1px solid white;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.propriedade-cartao .titulo{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.propriedade-cartao .pontos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pontos .ponto:hover{
+    background-color: white;
+}
+.pontos::before{
+    content: '';
+    background-color: pink;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    /*opacity: 0.5;*/
+    border-radius: 1.6rem;
+    display: none;
+    z-index: 1;
+}
+.pontos:hover::before{
+    background-color: var(---DarkBlue);
+    display: block;
+}
+.pontos .ponto{
+    background-color: var(---PaleBlue);
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    margin: 0.2rem;
+    z-index: 99;
+}
+
+.propriedade-cartao .seta02{
+   /* border: 1px solid white;*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.seta02 .horas{
+    color: white;
+    font-size: 2rem;
+    font-weight: 300;
+}
+.seta02 .descricao{
+    color: var(---PaleBlue);
+    font-size: 1.5rem;
+}
+
+.container .work{
+    background-color: var(---LightRed-work);
+    background-image: url(images/icon-work.svg);
+}
+
+.container .play{
+    background-color: var(---SoftBlue-play);
+    background-image: url(images/icon-play.svg);
+}
+
+.container .study{
+    background-color: var(---LightRed-study);
+    background-image: url(images/icon-study.svg);
+}
+
+.container .exercise{
+    background-color: var(---LimeGreen-exercise);
+    background-image: url(images/icon-exercise.svg);
+}
+
+.container .social{
+    background-color: var(---Violet-social);
+    background-image: url(images/icon-social.svg);
+}
+
+.container .self-care{
+    background-color: var(---SoftOrange-self-care);
+    background-image: url(images/icon-self-care.svg);
+}

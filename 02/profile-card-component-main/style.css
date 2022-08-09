@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+    font-family: Arial, sans-serif;
+    
+}
+html,body{
+   width: 100%;
+   height: 100%;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to bottom,#1AA3B3, #23B0B9, #43D7D9);
+    background-repeat: no-repeat;
+}
+.card-profile{
+    display: block;
+    width: 35.0rem;
+    background-color: #3BC7D1;
+    border-radius: 10px;
+}
+.card-profile .row{
+    display: block;
+    padding: 1.0rem 0rem;
+    text-align: center;
+}
+.card-profile .imagempf{
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-top: 8.5rem;
+}
+.card-profile .nome{
+    display: block;
+    font-size: 1.7rem;
+    color: #32313B;
+}
+span{
+    color: #9B9CA1;
+    font-size: 1.6rem;
+}
+.card-footer{
+    display: block;
+    margin-top: 30px;
+    padding: 40px 0px;
+    border-bottom-right-radius: 10px ;
+    border-bottom-left-radius: 10px ;
+    text-align: center;
+    background-color: white;
+
+}
+.card-footer .card-meta{
+    display: inline-block;
+    margin: 0px 10px;
+    position: relative;
+
+
+}
+.card-footer > .card-meta:nth-child(1)::before,
+.card-footer > .card-meta:nth-child(2)::before{
+    content: '';
+    position:absolute;
+    right: -15px;
+    width: 1px;
+    height: 4.0rem;
+    background-color: #9B9CA1;
+
+}
+.card-footer .card-meta .card-meta-num{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+.card-footer .card-meta .card-meta-title{
+    display: block;
+    font-size: 0.9rem;
+    margin-top: 5px;
+
+}
+.attribution {
+    font-size: 1.6rem;
+    text-align: center;
+}
+footer{
+    font-size: 0.9rem;
+      bottom: 0;
+      position: fixed;
+      width: 90%;       
+      text-align: center;
+}

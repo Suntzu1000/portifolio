@@ -1,0 +1,60 @@
+@media screen and (min-width: 1440px){
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .container{
+        width: 77%;
+
+        grid-template-columns: 23% 23% 23% 23%;
+        gap: 3rem;
+    }
+
+    .menu-cartao{
+        grid-row: 1 / span 2;
+        grid-column: unset;
+        height: 100%;
+    }
+    .menu-cartao .relatorio-cartao{
+        flex-direction: column;
+        align-items: flex-start;
+        height: 70%;
+        padding: 3.4rem 3rem;
+    }
+    .menu-cartao .relatorio-cartao img{
+        width: 8rem;
+    }
+    .menu-cartao .relatorio-cartao .relatorio{
+        margin-top: 1.0rem;
+    }
+    .menu-cartao .relatorio-cartao .relatorio .nome{
+        font-size: 4rem;
+    }
+    .menu-cartao .menu{
+        height: 30%;
+
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .regular-cartao .propriedade-cartao{
+        margin-top: 4.5rem;
+        padding: 2.8rem;
+    }
+
+    .regular-cartao .propriedade-cartao .seta02 .horas{
+        font-size: 5.5rem;
+        padding-top: 1.9rem;
+    }
+    .regular-cartao .propriedade-cartao .seta02 .descricao{
+        padding-top: 1.0rem;
+    }
+
+    .self-care{
+        background-color: var(---SoftOrange-self-care);
+        background-image: url(images/icon-self-care.svg);
+    }
+}

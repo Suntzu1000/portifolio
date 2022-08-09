@@ -1,0 +1,5 @@
+@import "menu.css";
+.cabecalho{
+    border: 1px solid purple;
+    background: white;
+}

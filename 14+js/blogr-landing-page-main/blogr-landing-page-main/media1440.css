@@ -1,0 +1,245 @@
+@media screen and (min-width: 1360px){
+    .menu{
+       /* border: 1px solid blue;*/
+        position: static;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        display: flex;
+        
+    }
+    
+    .bto-fechar{
+        display: none;
+    }
+    
+    .menu-embrulho{
+       /* border: 1px solid black;*/
+        background-color: transparent;
+        width: 100%;
+        /*height: 100px;*/
+        border-radius: 0;
+        margin-top: 0;
+        box-shadow: none;
+        flex-direction: row;
+        justify-content: space-between;
+    
+        padding: 0;
+    }
+    
+    .menu-embrulho hr{
+        display: none;
+    }
+    
+
+    .itens-menu-embrulho{
+        border: 1px solid blue;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 55%;
+        margin-left: 5%;
+    }
+    
+    .itens-menu{
+        position: relative;
+    }
+    .itens-menu h4{
+        color: var(---White-text);
+        opacity: 0.75;
+    }
+    .itens-menu h4:hover{
+        color: var(---White-text);
+        opacity: 1;
+        text-decoration: underline;
+    }
+    
+    .itens-menu .cabecalho-menu .seta:hover{
+        opacity: 1;
+    
+    }
+    
+    
+    
+    
+    .sub-menu{
+        display: absolute;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: var(---White-text);
+        border-radius: 10px;
+        width: 97%;
+        padding: 1.4rem;
+    }
+    .sub-menu a:hover{
+        font-size: 1.6rem;
+    }
+    
+    .sub-menu{
+        display: none;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1), 0px 20px 30px rgba(0, 0, 0, 0.1);
+    }
+    
+    .seta{
+       filter: brightness(200%);
+       opacity: 0.75;
+    }
+    
+    .bto-menu-embrulho{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 5%;
+    }
+    .bto-login{
+        color: var(---White-text);
+        margin-bottom: 0;
+    }
+    .bto-login:hover{
+        background-color: var( ---VeryDarkBlackBlue-footer-background);
+        color: var(---White-text);
+    }
+    
+    .bto-signUp{
+        background-image: none;
+        background-color: var(---White-text);
+        color: var(---LightRed-CTA-text);
+    }
+    .bto-signUp:hover{
+        border: none;
+        background-color: var(---VerylightRed-CTA-hover-background);
+        color: var(---White-text);
+    }
+    
+    .esconder-menu{
+        left: 0;
+        opacity: 1;
+    }
+    
+    .sanduiche{
+        display: none;
+    }
+    
+    .esconder-sanduiche{
+        opacity: 0;
+    }
+
+
+    .hero{
+        padding: 5.7rem 17rem 0 17rem;
+    }
+    .hero-texto-embrulho{
+        text-align: center;
+
+    }
+    .hero-texto-embrulho h1{
+        font-size: 4.6rem;
+    }
+    .hero-texto-embrulho span{
+        display: initial;
+    }
+    .hero-texto-embrulho h2{
+        font-size: 3rem;
+    }
+
+    .bto-embrulho{
+       justify-content: center;
+       gap: 1.5%;
+    }
+
+
+
+    .img-editor, .img-laptop{
+        display: none;
+    }
+    .img-editor-desktop{
+        display: block;
+        position: absolute;
+        left: 56%;
+        top: 10%;
+    }
+
+    .section{
+        position: relative;
+        overflow: hidden;
+        padding: 15.5rem 17rem 22rem 17rem;
+    }
+    .section h2{
+        font-size: 4rem;
+    }
+
+    .trancar-texto{
+        width: 48%;
+        text-align: left;
+    }
+    .trancar-texto h3{
+        margin-top: 10.5rem;
+    }
+    .trancar-texto span{
+        display: initial;
+    }
+
+    .conteudo-embrulho{
+        align-items: flex-start;
+    }
+
+    .vazio{
+        height: 4rem;
+    }
+
+    .img-telefones{
+        z-index: 1;
+        top: -11rem;
+        left: 12rem;
+        width: 55rem;
+    }
+
+    .section-meio{
+        align-items: flex-end;
+        height: 40rem;
+        background-size: 70%, 100%;
+        background-position: -48% 81%, 0% 0%;
+        
+    }
+
+    .section-meio .conteudo-embrulho{
+        width: 49%;
+    }
+  
+    
+    .trancar-texto-telefones{
+        text-align: right;
+        width: 100%;
+    }
+    .trancar-texto-telefones h3{
+        font-size: 3.8rem;
+        margin-top: 8rem;
+    }
+
+    .section-laptop{
+        position: relative;
+    }
+
+    .section-laptop .conteudo-embrulho{
+        align-items: flex-end;
+    }
+
+    .img-laptop-desktop{
+        position: absolute;
+        left: -19%;
+        top: 12%;
+        display: block;
+    }
+
+    .rodape{
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding-left: 15rem;
+        padding-right: 35rem;
+    }
+    .rodape h4{
+        margin-top: 0;
+    }
+    
+}

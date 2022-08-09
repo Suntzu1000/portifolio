@@ -1,0 +1,92 @@
+.hero{
+    width: 90%;
+    height: 600px;
+    /*border: 1px solid black;*/
+    /*background-image: linear-gradient(50deg, var(---VeryLightRed),var(---LightRed));*/
+
+    background-image: url(images/bg-pattern-intro-mobile.svg),linear-gradient(50deg, var(---VeryLightRed),var(---LightRed)); ;
+    /*background-size: 350% 100%;*/
+    background-position: 35% 34%, 0% 0%;
+    background-repeat: no-repeat, no-repeat;
+    border-bottom-left-radius: 100px;
+    padding: 5.7em 2.5rem 0 2.5rem;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.marca{
+    height: 3.3rem;
+}
+
+.hero-texto-embrulho{
+   /* border: 1px solid greenyellow;*/ /*teste*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+ .hero h1{
+    color: var(---White-text);
+    font-size: 3.2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+span{
+    display: block;
+}
+
+h2{
+    color: var(---White-text);
+    text-align: center;
+    font-weight: 300;
+    margin-top: 1.3rem;
+    font-size: 1.8rem;
+}
+
+.bto-embrulho{
+    /*border: 1px solid black;*/ /*teste*/
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 95%;
+    margin-top: 4.5rem;
+}
+.bto{
+    /*border: 1px solid black;*/ /*teste*/
+    height: 4.8rem;
+    width: 13.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    border-radius: 5rem;
+}
+
+.bto-primario{
+    background-color: var(---White-text);
+    color: var(---LightRed-CTA-text);
+
+}
+.bto-primario:hover{
+    background-color: var(---VerylightRed-CTA-hover-background);
+    color: var(---White-text);
+}
+
+.bto-secundario{
+    border: 1px solid var(---White-text);
+    color: var(---White-text);
+}
+.bto-secundario:hover{
+    background-color: var(---White-text);
+    color: var(---VerylightRed-CTA-hover-background);
+
+}

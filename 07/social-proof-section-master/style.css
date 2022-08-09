@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Outfit:wght@100;200;300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    ---VeryDarkMagenta: hsl(300, 43%, 22%);
+    ---SoftPink: hsl(333, 80%, 67%);
+
+/*### Neutral*/
+
+    ---DarkGrayishMagenta: hsl(303, 10%, 53%);
+    ---LightGrayishMagenta: hsl(300, 24%, 96%);
+    ---White: hsl(0, 0%, 100%);
+}
+
+body{
+    background-image: url(images/bg-pattern-top-desktop.svg);
+    font-family: 'Spartan', sans-serif;
+    font-size: 15px;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.top{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.top h1{
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+.top p{
+    font-size: .9rem;
+}
+
+.clienteAvaliando{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(---LightGrayishMagenta);
+    padding: .7rem 1.7rem;
+    margin-bottom: .8rem;
+    font-size: .7rem;
+    align-items: center;
+    border-radius: 10px;
+}
+.avaliandoImg{
+    margin-right: 1rem;
+}
+
+.segundaAvaliacao{
+    margin-left: 1rem;
+}
+
+.terceiraAvaliacao{
+    margin-left: 2rem;
+}
+
+.bottom-avaliacao{
+    margin-top: 50px;
+}
+.rating-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 300px;
+    height: 150px;
+    background-color: var(---VeryDarkMagenta);
+    margin-right: 1rem;
+    padding:  20px 15px;
+    border-radius: 8px;
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+}
+.perfil img{
+    width: 50px;
+    height: auto;
+    border-radius:100px ;
+    margin-right: 1rem;
+}
+.perfil h3{
+    font-size: .7rem;
+    color: var(---White);
+    margin-bottom: 3px;
+}
+.perfil h5{
+    font-size: .5rem;
+    color: rgb(134, 126, 126);
+}
+
+.reveja p{
+    font-size: .8rem;
+    color: var(---White);
+    margin-top: 10px;
+    font-weight: 500;
+    line-height: 1.1rem;
+}
+
+.rating-card-2{
+    margin-top: 1rem;
+}
+.rating-card-3{
+    margin-top: 2rem;
+}
+
+.bottom-avaliacao{
+    background-image: url(images/bg-pattern-bottom-desktop.svg);
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+    text-align: center;
+  }
+
+
+  @media (max-width: 500px) {
+    .top h1{
+        font-size: 2rem;
+        margin-top: 1rem;
+        text-align: center;
+        background-image: url(images/bg-pattern-top-mobile.svg);
+    }
+    .top p{
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .segundaAvaliacao{
+        margin-left: 0;
+    }
+    .terceiraAvaliacao{
+        margin-left:0;
+    }
+
+    .avaliandoImg{
+        margin-right: 0;
+    }
+    .clienteAvaliando{
+        justify-content: center;
+    }
+    .rating-card{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .card{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .bottom-avaliacao{
+        margin-top: 0;
+        margin-bottom: 1rem;
+        background-image: url(images/bg-pattern-bottom-mobile.svg);
+        background-position: bottom;
+    }
+  }

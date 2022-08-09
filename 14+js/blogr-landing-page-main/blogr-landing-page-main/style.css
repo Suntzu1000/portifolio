@@ -1,0 +1,64 @@
+@import "hero.css";
+@import "section.css";
+@import "rodape.css";
+@import "menu.css";
+@import "media1440.css";
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,300;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,400;1,500;1,700&display=swap');
+
+:root{
+    /*### Primary*/
+    ---submenu: rgba(239, 239, 241);
+    ---LightRed-CTA-text: hsl(356, 100%, 66%);
+    ---VerylightRed-CTA-hover-background: hsl(355, 100%, 74%);
+    ---VeryDarkBlue-headings: hsl(208, 79%, 32%);
+
+    /*### Neutral*/
+    ---White-text: hsl(0, 0%, 100%);
+    ---GrayishBlue-footer-text: hsl(240, 2%, 79%);
+    ---VeryDarkGrayishBlue-body-copy: hsl(207, 13%, 34%);
+    ---VeryDarkBlackBlue-footer-background: hsl(240, 10%, 16%);
+
+    /*### Gradient*/
+
+/*Background gradient - Intro/CTA mobile nav:*/
+
+    ---VeryLightRed: hsl(13, 100%, 72%);
+    ---LightRed: hsl(353, 100%, 62%);
+
+/*Background gradient - body: */
+
+    ---VeryDarkGrayBlue: hsl(237, 17%, 21%);
+    ---VeryDarkDesaturatedBlue: hsl(237, 23%, 32%);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Overpass', sans-serif;
+   /* font-family: 'Ubuntu', sans-serif;*/
+}
+
+a{
+    text-decoration: none;
+}
+
+.attribution { 
+    color: var(---VeryLightRed); 
+    font-size: 14px; 
+    text-align: center; 
+    bottom: 0;
+    padding: 10px;
+    left: 0;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+}
+    .attribution a { 
+    color: var(---VeryDarkBlue-headings)
+}
+    
+    

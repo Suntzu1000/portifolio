@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,400;1,100&family=Outfit:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /*### Primary*/
+
+    ---Moderate-violet: hsl(263, 55%, 52%);
+    ---Verydark-grayish-blue: hsl(217, 19%, 35%);
+    ---Verydark-blackish-blue: hsl(219, 29%, 14%);
+    ---White: hsl(0, 0%, 100%);
+
+    /*### Neutral*/
+
+    ---Light-gray: hsl(0, 0%, 81%);
+    ---Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+body{
+    font-family: 'Balsamiq Sans', cursive;
+    background-color:var(---Light-grayish-blue) ;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight: 600;
+}
+
+p{
+    line-height: 1.2;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 20px;
+}
+
+.cartas{
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+}
+.cartas.violeta{
+    background-color: var(---Moderate-violet);
+}
+.cartas.azulCinzento{
+    background-color: var(---Verydark-grayish-blue);
+}
+.cartas.branco{
+    background-color: var(---White);
+    color: var(---Verydark-grayish-blue);
+}
+.cartas.azulEscuro{
+    background-color: var(---Verydark-blackish-blue);
+}
+.cartas.branco2{
+    background-color: var(---White);
+    color: var(---Verydark-grayish-blue);
+}
+.cartas .citacoes{
+    position: absolute;
+    right: 30px;
+    top: 30px;
+    width: 90px;
+}
+.cartas .imagem{
+    display: flex;
+    align-items: center;
+}
+.cartas .imagem img{
+    border-radius: 50%;
+    margin-right: 10px;
+
+}
+.cartas h4{
+    margin: 20px 0;
+    font-size: 20px;
+}
+.cartas p{
+    font-size: 16px;
+}
+
+.attribution { 
+    font-size: 15px;
+    text-align: center;
+    margin: 20px;
+    padding: 0px;
+}
+.attribution a { 
+        color: hsl(228, 45%, 44%);
+    }
+
+@media (min-width: 640px){
+    .container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1280px){
+    .container{
+        grid-template-columns: repeat(4, 1fr);
+        max-width: 1165px;
+        margin: 50px auto;
+    }
+
+    .cartas.violeta{
+        grid-column: 1/3;
+
+    }
+    .cartas.azulEscuro{
+        grid-column: 2/4;
+    }
+    .cartas.branco2{
+        grid-column: 4;
+        grid-row: 1/3;
+    }
+    .attribution { 
+        font-size: 20px;
+        text-align: center;
+    }
+    .attribution a { 
+            color: hsl(228, 45%, 44%);
+        }
+}

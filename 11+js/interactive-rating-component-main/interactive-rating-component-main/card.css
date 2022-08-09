@@ -1,0 +1,130 @@
+.container{
+    /*border: 1px solid magenta;*/
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cartao{
+    background-color: var(---DarkBlue);
+    width: 88%;
+    max-width: 40rem;
+   /* height: 100px;*/
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+}
+
+
+
+.conteudo02{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto{
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.estrela{
+    background-color: var(---MediumGrey);
+    width: 4rem;
+    height: 4rem;
+    padding: 1.2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    width: 14.5rem;
+    margin-top: 0rem;
+}
+.resultado{
+    background-color: var(---MediumGrey);
+    color: var(---Orange);
+    font-size: 1.4rem;
+    padding: 0.8rem 1.6rem;
+    border-radius: 2rem;
+    margin-top: 2.4rem;
+    margin-bottom: 0.6rem;
+
+
+}
+.titulo{
+    font-size: 2.4rem;
+    color: var(---White);
+    margin-top: 1.9rem;
+}
+
+.texto0{
+    color: var(---LightGrey);
+    font-size: 1.415rem;
+    line-height: 2.2rem;
+    margin-top: 1.2rem;
+}
+
+.classificados{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.classificacao{
+    color: var(---LightGrey);
+    font-size: 1.3rem;
+    font-weight: 700;
+    background-color: var(---MediumGrey);
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2.5rem;
+}
+.classificacao:hover{
+    background-color: var(---Orange);
+    color: var(---White);
+    cursor: pointer;
+}
+
+.ativo{
+    background-color: var(---LightGrey);
+    color: var(---White);
+}
+
+
+
+/*div{
+    transform: translateY(10%);
+}*/
+
+.enviar{
+    background-color: var(---Orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: var(---White);
+    margin-top: 2.5rem;
+    padding: 1.2rem;
+    border-radius: 4rem;
+    font-size: 1.7rem;
+    letter-spacing: 0.1rem;
+}
+
+.enviar:hover{
+    background-color: var(---White);
+    color: var(---Orange);
+    cursor: pointer;
+}
+
+.oculto{
+    display: none;
+}

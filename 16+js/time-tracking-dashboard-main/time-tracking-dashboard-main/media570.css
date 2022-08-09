@@ -1,0 +1,27 @@
+@media screen and (min-width: 570px){
+    .container{
+        display: grid;
+        grid-template-columns: 48% 48%;
+    }
+
+    .menu-cartao{
+        grid-column: 1 / span 2;
+    }
+    .menu-cartao .relatorio-cartao{
+        gap: 3rem;
+    }
+
+  
+    .regular-cartao .propriedade-cartao .seta02{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .regular-cartao .propriedade-cartao .seta02 .horas{
+        font-size: 3rem;
+    }
+    .self-care{
+        background-color: var(---SoftOrange-self-care);
+        background-image: url(images/icon-self-care.svg);
+    }
+}

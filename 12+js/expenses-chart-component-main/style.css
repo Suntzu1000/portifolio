@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,700;1,400&display=swap');
+
+:root{
+    ---White: rgb(255, 255, 255);
+    ---Softred: hsl(10, 79%, 65%);
+    ---Cyan: hsl(186, 34%, 60%);
+    ---Softred0: hsl(10, 56%, 59%);
+
+/*### Neutral*/
+
+---Darkbrown: hsl(25, 47%, 15%);
+---Mediumbrown: hsl(28, 10%, 53%);
+---Cream: hsl(27, 66%, 92%);
+---Verypaleorange: hsl(33, 100%, 98%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.areaPrincipal{
+    min-height: 100vh;
+    width: 100%;
+    background: var(---Cream);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.cartaoArea .top{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify ;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background: var(---Softred);
+    padding: 1.4rem;
+    border-radius: 1rem;
+    color: var(---White);
+    margin-bottom: 1rem;
+}
+
+.top .esquerda p{
+    font-size: 0.8rem;
+    color: var(---Cream);
+    margin-bottom: 3px;
+}
+
+.top .esquerda h1{
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.top .direita img{
+    width: 50px;
+}
+
+.cartaoArea .fundoMain{
+    background: var(---White);
+    padding: 1.4rem;
+    border-radius: 1rem;
+}
+
+.fundoMain h1{
+    font-size: 1.4rem;
+    margin-bottom: 01.5rem;
+}
+
+.fundoMain .caixaDoGrafico{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    gap: 5px;
+}
+.caixaDoGrafico .each-col-box{
+    text-align: center;
+}
+.caixaDoGrafico .column{
+    width: 50px;
+}
+.caixaDoGrafico .column:hover .titulo{
+    opacity: 1;
+}
+.caixaDoGrafico .titulo{
+    background: var(---Darkbrown);
+    width: 100%;
+    color: var(---White);
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 0.8rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    opacity: 0;
+    transition: 0.3s ease opacity;
+}
+
+.caixaDoGrafico .col-bar{
+    display: inline-block;
+    width: 80%;
+    background: var(---Softred);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease color;
+}
+
+.caixaDoGrafico .col-bar:hover{
+    background: var(---Softred0);
+}
+
+.caixaDoGrafico .col-bar .max{
+    background: var(---Cyan);
+}
+
+.caixaDoGrafico .col-bar .max:hover{
+    background: var(---Cream);
+}
+.caixaDoGrafico .each-col-box .day{
+    color: var(---Mediumbrown);
+    font-size: 0.8rem;
+}
+
+.fundoMain hr{
+    margin: 1rem;
+    background: #d0c9c94a;
+    height: 2px;
+    border: 0;
+}
+.fundoMain .fundoSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.fundoSection .esquerda p{
+    color: var(---Mediumbrown);
+    font-size: 0.8rem;
+    letter-spacing: 0.3px;
+}
+.fundoSection .esquerda h2{
+    font-size: 2rem;
+}
+.fundoSection .direita{
+    margin-bottom: 5px;
+}
+.fundoSection .direita p.porcentagem{
+    color: #000;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: right;
+}
+
+.fundoSection .direita p.mesPassado{
+    color: var(---Mediumbrown);
+    font-size: 1rem;
+}
+
+.attribution { font-size: 16px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @media only screen and (max-width: 500px){
+        .cartaoArea .top, .cartaoArea .bottom{
+            padding: 1rem;
+            border-radius: 0.7rem;
+        }
+
+        .caixaDoGrafico .column{
+            width: 45px;
+        }
+        .attribution { 
+        font-size: 12px; 
+        text-align: center; 
+        bottom: 0;
+        padding: 10px;
+        left: 0;
+        height: 40px;
+        position: fixed;
+        width: 100%;
+    }
+}
+
+    @media only screen and (max-width: 400px){
+        .cartaoArea .top, .cartaoArea .bottom{
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+        }
+
+        .caixaDoGrafico .column{
+            width: 45px;
+        }
+
+        .attribution { 
+            font-size: 11px; 
+            text-align: center; 
+            bottom: 0;
+            padding: 10px;
+            left: 0;
+            height: 40px;
+            position: fixed;
+            width: 100%;}
+    }

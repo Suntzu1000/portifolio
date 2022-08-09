@@ -1,0 +1,220 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+
+}
+
+body{
+    font-size: 18px;
+    font-family: 'Bai Jamhuree', 'sans serif';
+}
+
+header{
+    padding: 30px 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/bg-header-desktop.png);
+    background-size: cover;
+}
+
+.comeco{
+    text-align: center;
+    padding: 10px 0;
+    width: 40%;
+}
+.comeco h2{
+    padding: 5px 0;
+}
+
+.butaoClicar{
+    padding: 20px 0;
+}
+.butaoClicar button{
+    padding: 10px 25px;
+    background: transparent;
+    outline: none;
+    border: none;
+    color: white;
+    margin: 0 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.butaoClicar button.baixarNoIos{
+    background-color: hsl(171, 66%, 44%);
+    box-shadow: 2px 2px 8px hsl(171, 66%, 44%), 2px 2px 2px hsl(171, 66%, 44%);
+}
+.butaoClicar button.baixarNoMac{
+    background-color: hsl(223, 100%, 69%);
+    box-shadow: 2px 2px 8px hsl(223, 100%, 69%), 2px 2px 2px hsl(223, 100%, 69%);
+}
+
+.primeira{
+    text-align: center;
+    width: 45%;
+    margin: auto;
+}
+.primeira h2{
+    padding: 15px 0;
+}
+
+.segunda{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 50px 0;
+}
+.segunda img{
+    height: 100%;
+    width: 96%;
+}
+.segunda .propaganda div{
+    margin-top: 40px;
+    width: 65%;
+
+}
+
+.terceira{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.terceira img{
+    height: 100%;
+    width: 80%;
+    margin: auto;
+
+}
+.terceira div:first-child{
+    padding: 70px 0;
+    width: 65%;
+    margin: auto;
+}
+
+.quarta .functions{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 100px 0;
+}
+.quarta .functions div{
+    width: 26%;
+    margin: 0 30px;
+}
+.quarta .functions div img{
+    margin: 10px 0 20px 0 ;
+}
+.quarta .suporteDasEmpresas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+    margin: 50px 30px;
+}
+
+.quinta{
+    text-align: center;
+    width: 46%;
+    margin: auto;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    align-items: center;
+}
+.pe .logo{
+    width: 50px;
+    height: 50px;
+    margin: 0 70px;
+}
+.pe ul{
+    list-style: none;
+    max-width: 400px;
+}
+ul li{
+    display: inline-block;
+    margin: 5px 20px;
+
+}
+a{
+    color: hsl(171, 66%, 44%);
+}
+.attribution { 
+    font-size: 16px; text-align: center; 
+    color: hsl(229, 44%, 28%);}
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+footer p{
+    text-align: center;
+}
+
+@media (max-width: 765px){
+    header{
+        background: url(./images/bg-header-mobile.png);
+        background-size: cover;
+        padding: 40px 10px;
+}
+    .comeco{
+        width: 100%;
+}
+    .primeira{
+        width: 80%;
+    }
+    .segunda{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .segunda .propaganda div{
+        width: 75%;
+        margin: 60px 12% auto;
+        text-align: center;
+         
+    }
+    .terceira div:first{
+        width: 75%;
+
+    }
+    .quarta .functions{
+        display: grid;
+    }
+    .quarta .functions div{
+        width: 85%;
+    }
+    .quarta .suporteDasEmpresas{
+        display: grid;
+        grid-gap: 4em;
+        justify-content: center;
+        align-items: center;
+    }
+    .quinta{
+        width: 84%;
+    }
+    .butaoClicar button{
+        margin: 10px 0;
+    }
+    footer .pe{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 20px 0;
+    }
+    ul li{
+        display: grid;
+        margin: 20px;
+    }
+    .redesSociais a{
+        margin: 10px;
+
+    }
+}
+
